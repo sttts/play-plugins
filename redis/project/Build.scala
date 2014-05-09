@@ -28,6 +28,7 @@ object MinimalBuild extends Build {
     libraryDependencies += "biz.source_code" % "base64coder" % "2010-12-19",
     libraryDependencies += "com.typesafe" %% "play-plugins-util" % buildVersion,
     libraryDependencies += "com.typesafe.play" %% "play-cache" % buildVersion % "provided",
-    libraryDependencies += "org.sedis" % "sedis_2.10.0" % "1.2.0"
+    libraryDependencies += "redis.clients"% "jedis" % "2.4.2",
+    libraryDependencies += "org.sedis" % "sedis_2.10.0" % "1.2.0" intransitive()
   )
 }
